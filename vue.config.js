@@ -1,7 +1,7 @@
 module.exports = {
-  chainWebpack: config => {
-    config.externals(["vue", "vue-router", /^@gz\/.+/]);
+  chainWebpack: (config) => {
+    config.externals([/^@gz\/.+/]);
   },
   lintOnSave: false,
-  filenameHashing: false
+  filenameHashing: false,
 };
